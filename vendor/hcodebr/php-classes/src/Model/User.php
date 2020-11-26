@@ -31,9 +31,11 @@ class User extends Model{
 			$user = new User();
 
 			$user->setData($data);
+
 			return $user;
 
 			$_SESSION[User::SESSION] = $user->getValues();
+
 
 
 		}else{
